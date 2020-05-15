@@ -29,6 +29,6 @@ function eraseCookie(name) {
     document.cookie = name+'=; Max-Age=-99999999;';  
 }
 
+eraseCookie("novikov");
 
-
-setCookie("novikov", 12345, 9999);
+//setCookie("novikov", 12345, 9999);
