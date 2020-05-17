@@ -1,27 +1,30 @@
-<html><body>
-    <div id="wrapper" style="height: 400px; overflow: auto;">
-      <div id="content"> </div>
-    </div>
-    
-    <script language="JavaScript">
-      // we will add this content, replace for anything you want to add
-      var more = '<div style="height: 1000px; background: #EEE;"></div>';
-    
-      var wrapper = document.getElementById("wrapper");
-      var content = document.getElementById("content");
-      content.innerHTML = more;
-    
-      // this is the scroll event handler
-      function scroller() {
-        // print relevant scroll info
-    
-        // add more contents if user scrolled down enough
-        if(wrapper.scrollTop+wrapper.offsetHeight+100>content.offsetHeight) {
-          content.innerHTML+= more;
-        }
-      }
-    
-      // hook the scroll handler to scroll event
-      wrapper.addEventListener ("scroll", scroller);
-    </script>
-    </body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <input type="text" id="seaRch">
+        <a href="#" id="pressMe">Поиск</a>
+    </header>
+    <main>
+
+        <div id="out">
+
+        </div>
+        <div id="outError">
+            Ошибка Поиска
+        </div>
+        <!-- <button id="nextpage">Следующую страницу</button> -->
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
