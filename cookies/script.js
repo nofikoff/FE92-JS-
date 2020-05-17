@@ -24,7 +24,12 @@ setCookie("myJson", JSON.stringify(myJson), 1)
 //persoanl.html
 if (typeof(form002) !== 'undefined') {  
     console.log("persoanl.html");
-    exitclick.addEventListener("click", ()=>{setCookie("myJson", '', 1)});
+    exitclick.addEventListener("click", ()=>{
+        //browser.cookies.remove();
+        setCookie("myJson", '', 1)
+        //eraseCookie("myJson");
+    
+    });
 
 // мы на второй странице?
 //      кукиес нужные есть ? - ДА - ждем данные формы
