@@ -1,12 +1,30 @@
 ﻿"use strict";
 
-if (typeof(elem) !== 'undefined') {  
-}
 
+//index.html
+if (typeof(form001) !== 'undefined') {  
+    console.log("index.html");
 // мы на первойс странице?
 //      кукиес нужные есть ? - ДА - редирект на вторую
 //      нет кукиес - обрабатываем запорс от формы - сохраняем в куукиес - редирект на вторую
 
+let myJson = {
+
+    email: 'info@novikov.ua',
+    password: 'qwerty'
+    
+
+};
+setCookie("myJson", JSON.stringify(myJson), 1)
+
+
+
+}
+
+//persoanl.html
+if (typeof(form002) !== 'undefined') {  
+    console.log("persoanl.html");
+    exitclick.addEventListener("click", ()=>{setCookie("myJson", '', 1)});
 
 // мы на второй странице?
 //      кукиес нужные есть ? - ДА - ждем данные формы
@@ -14,6 +32,10 @@ if (typeof(elem) !== 'undefined') {
 //      да куиес есть - обрабатываем запорс от формы - сохраняем в куукиес
 //      Клик на EXIT - чистим кукиес - редикрет на перву.ю страницу
 
+
+
+
+}
 
 
 
@@ -45,6 +67,9 @@ function getCookie(name) {
     }
     return null;
 }
+
 function eraseCookie(name) {   
+console.log("eraseCookie for "+name);
+
     document.cookie = name+'=; Max-Age=-99999999;';  
 }
