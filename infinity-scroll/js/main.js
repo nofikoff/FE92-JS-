@@ -2,10 +2,10 @@
 
 var count = 2;
 let main = document.getElementsByTagName('main');
-console.log(main.scrollTop)
+// console.log(main.scrollTop)
 
 function scroller() {
-    console.log()
+    // console.log()
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         nextPage()
         count = count + 1;
@@ -22,7 +22,7 @@ pressMe.addEventListener("click", getFilms);
 //     return count = count + 1;
 // });
 
-console.log(count)
+// console.log(count)
 
 document.querySelector('body').addEventListener('click', (e) => {
     if ((e.target.tagName).toLowerCase() === 'img') {
@@ -31,7 +31,7 @@ document.querySelector('body').addEventListener('click', (e) => {
 });
 document.querySelector("body").addEventListener('click', (e) => {
     if ((e.target.id) === "modal-close") {
-        console.log(e.target)
+        // console.log(e.target)
         document.querySelector('div.modal-over').remove()
     }
     if (e.target.classList == 'modal-over') {
