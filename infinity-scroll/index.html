@@ -1,0 +1,27 @@
+<html><body>
+    <div id="wrapper" style="height: 400px; overflow: auto;">
+      <div id="content"> </div>
+    </div>
+    
+    <script language="JavaScript">
+      // we will add this content, replace for anything you want to add
+      var more = '<div style="height: 1000px; background: #EEE;"></div>';
+    
+      var wrapper = document.getElementById("wrapper");
+      var content = document.getElementById("content");
+      content.innerHTML = more;
+    
+      // this is the scroll event handler
+      function scroller() {
+        // print relevant scroll info
+    
+        // add more contents if user scrolled down enough
+        if(wrapper.scrollTop+wrapper.offsetHeight+100>content.offsetHeight) {
+          content.innerHTML+= more;
+        }
+      }
+    
+      // hook the scroll handler to scroll event
+      wrapper.addEventListener ("scroll", scroller);
+    </script>
+    </body></html>
