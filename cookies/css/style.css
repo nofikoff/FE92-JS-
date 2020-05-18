@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.index {
+    background-color: rgba(76, 0, 130, 0.295);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid rgba(128, 128, 128, 0.849);
+    box-shadow: 9px 6px 28px 15px rgba(155,173,189,1);
+}
+.index  label,input,button {
+    width: 100%;
+    padding: 5px 10px;
+}
+.index  label {
+    color: white;
+
+}
+.index  input {
+    border: 1px solid rgba(128, 128, 128, 0.527);
+    margin: 10px 0;
+    background-color: rgba(76, 0, 130, 0.377);
+    border-radius: 10px;
+}
+.index  button {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.425);
+    color: white;
+}
+/* Personal
+========================================================== */
+.personal {
+    background-color: rgba(76, 0, 130, 0.295);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    border: 2px solid rgba(128, 128, 128, 0.849);
+    box-shadow: 9px 6px 28px 15px rgba(155,173,189,1);
+}
+.item {
+    width: 100%;
+    max-width: 48%;
+}
+.personal label, input, select {
+    width: 100%;
+    padding: 5px 10px;
+}
+.personal label {
+    color: white;
+
+}
+.personal input, select {
+    border: 1px solid rgba(128, 128, 128, 0.527);
+    margin: 10px 0;
+    background-color: rgba(76, 0, 130, 0.377);
+    border-radius: 10px;
+}
+.personal button {
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.425);
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.725);
+}

@@ -4,15 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!DOCTYPE html>
+<html lang="en">
 
-<span id="exitclick"><a href=#>Exit</a></span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="personal" id="form002">
+
+            <div class="item">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName">
+            </div>
+
+            <div class="item">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName">
+            </div>
+
+            <div class="item">
+                <label for="phoneNumber">Phone number</label>
+                <input type="tel" id="phoneNumber">
+            </div>
 
 
-    <form id="form002">
-    </form>
+            <div class="item">
+                <label for="birthDay">Birthday</label>
+                <input type="date" id="birthDay">
+            </div>
 
-    <script src="script.js"></script>
+            <div class="item">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div class="item">
+                <label for="skype">Skype</label>
+                <input type="text" id="skype">
+            </div>
+
+
+            <button id="saveBtn">Save</button>
+            <span id="exitclick"><a href=#>Exit</a></span>
+
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
