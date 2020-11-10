@@ -1,4 +1,4 @@
-# FE92-JS-
-Тестовый репозиторий
-Hello World
-My second commit
+# hometask-FE92-team-project-JS
+
+
+Работаем ребята
